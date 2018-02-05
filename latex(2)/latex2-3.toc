@@ -1,2 +1,0 @@
-\contentsline {chapter}{\numberline {第一章\hspace {.3em}}自然语言}{5}
-\contentsline {chapter}{\numberline {第二章\hspace {.3em}}计算机语言}{7}
