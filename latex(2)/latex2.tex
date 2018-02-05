@@ -2,19 +2,64 @@
 
 
 \documentclass[UTF8]{ctexart}
-
-\title{杂谈勾股定理}
-\author{xuan}
-\date{\today}
-
-\bibliographystyle{plain}
+\usepackage{float}
+\usepackage[greek,english]{babel}
 
 \begin{document}
 
-\maketitle
-\tableofcontents
-\section{勾股定理在古代}
-\section{勾股定理的近代形式}
-\bibliography{math}
+\begin{table}[H]
+\begin{tabular}{|ccc|}
+\hline 
 
+重音& 命令& \\
+\AA & \textbackslash AA & \\
+\aa & \textbackslash aa & \\
+\hline
+
+\end{tabular}
+\end{table}
+\textgreek{a b c d e f g h i j k l m n o p q r s t u v w x y z}
+
+……
+
+\ldots
+
+\S  \dag  \ddag  \P  \copyright  \textregistered  \texttrademark  \pounds  \textbullet
+
+\textit{Italic font test}
+
+{\bfseries Bold font test}
+
+{\CJKfamily{hei}这是黑体}
+
+{\CJKfamily{kai}这是楷书}
+{\kaishu 这是楷书}
+{\fangsong 这是仿宋}
+
+\fontencoding{OT1}\fontfamily{pzc}
+\fontseries{mb}\fontshape{it}
+\fontsize{14}{17}\selectfont
+PostScript New Century Schoolbook
+
+\usefont{T1}{pbk}{db}{n}
+PostScript Bookman Demibold Normal
+
+\mbox{cannot be broken}
+
+\makebox[1em]{\textbullet} text \\
+\makebox[5cm][s]{some stretched text}
+
+语言文字\llap{word}\\
+\rlap{word}语言文字
+
+\fbox{framed}\\
+\framebox[3cm][s]{framed box}
+
+\begin{tabbing}
+格式 \hspace{3em} \= 作者 \kill
+Plain \TeX \> 高纳德 \\
+\LaTeX \> Leslie Lamport
+\end{tabbing}
+这个是不是加粗加黑
+\rule{1em}{1em}
 \end{document}
