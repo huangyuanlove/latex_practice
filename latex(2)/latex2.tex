@@ -4,6 +4,8 @@
 \documentclass[UTF8]{ctexart}
 \usepackage{float}
 \usepackage[greek,english]{babel}
+\usepackage{listings}
+
 
 \begin{document}
 
@@ -24,6 +26,13 @@
 
 \ldots
 
+``''
+`'
+
+``It's Knuth's book。'', he said。
+
+``\,`A' or `B'\,'' he asked.
+
 \S  \dag  \ddag  \P  \copyright  \textregistered  \texttrademark  \pounds  \textbullet
 
 \textit{Italic font test}
@@ -36,12 +45,12 @@
 {\kaishu 这是楷书}
 {\fangsong 这是仿宋}
 
-\fontencoding{OT1}\fontfamily{pzc}
-\fontseries{mb}\fontshape{it}
-\fontsize{14}{17}\selectfont
+%\fontencoding{OT1}\fontfamily{pzc}
+%\fontseries{mb}\fontshape{it}
+%\fontsize{14}{17}\selectfont
 PostScript New Century Schoolbook
 
-\usefont{T1}{pbk}{db}{n}
+%\usefont{T1}{pbk}{db}{n}
 PostScript Bookman Demibold Normal
 
 \mbox{cannot be broken}
@@ -62,4 +71,34 @@ Plain \TeX \> 高纳德 \\
 \end{tabbing}
 这个是不是加粗加黑
 \rule{1em}{1em}
+
+\begin{enumerate}
+\item 中文
+\item English
+\end{enumerate}
+
+\begin{itemize}
+\item 中文
+\item English
+\end{itemize}
+
+\begin{description}
+\item[中文] 中文
+\item[英文] English
+\end{description}
+
+\begin{verbatim}
+#! user/bin /env perl
+$name = ''guy'';
+print ''Hello,$name!\n''
+\end{verbatim}
+
+\begin{lstlisting}[language=java]
+class Test{
+	public static void main(String ... args){
+		System.out.println(''Hello Java'');
+	}
+}
+\end{lstlisting}
+
 \end{document}
